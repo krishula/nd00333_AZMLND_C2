@@ -5,18 +5,23 @@
 ## Overview
 
 We have performed two different tasks in this project:
-1. Best Model Deployment in Azure ML Studio using Auto ML:
+### 1. Best Model Deployment in Azure ML Studio using Auto ML:
   Steps -
   - We started by creating a new auto ml run.
   - Then we registered the bankmarketing dataset. According to UCI repository, this data is related with direct marketing campaigns of a Portuguese banking   institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be ('yes') or not ('no') subscribed. We seek to predict whether or not the potential client would accept to make a term deposit with the bank.
-  - After, we configured auto ml run for 'classification' in Azure ML studio.
+  - Then, we created a new auto ml experiment and selected the registered bank marketing dataset from above.
+  - After that, we configure a new compute cluster on which our experiment would run. We selected "Standard_DS12_v2" as virtual machine size and selected 1 for the number of maximum nodes.
+  - We then ran the experiment using 'classification' in Azure ML studio and made sure that "Explain best model" is checked. .
   - The model ran a bunch of algorithms and returned VotingEnsemble as the best model with the most accuracy of 92%.
-  - We chose the best model and deployed it, which created a REST endpoint. Application insights was enabled, Swagger documentation was produced and we concluded by benchmarking the REST endpoint.
-  - We consumed the REST endpoint, by sending the json requests to the REST endpoint and got predictions back.
+  - We chose the best model for deployment and enabled "Authentication" while deploying the model using Azure Container Instance (ACI). The executed code in logs.py enables "Application Insights". "Application Insights Enabled" was disabled before executing logs.py.
+  - In order to consume the model using Swagger, we downloaded the file 'swagger.sh' and 'serve.py' and ran those on port 9000 and 8000 respectively. Swagger.h was configured to run at port 80 but due to lack of permission to run on that port, we updated the port to a 9000 or above before we ran it. After that we were able to interact with the Swagger instance on the browser which was running with the documentation of the HTTP API of the model.
+  - We consumed the REST endpoint, by sending the json requests to the REST endpoint and got predictions back. We used the endpoint.py script provided to interact with the trained model. To run the script, we had to modify both the scoring_uri and the key to match the key for our service and the URI that was generated after deployment.
   
-2. Published ML Pipeline using Azure ML SDK:
+### 2. Published ML Pipeline using Azure ML SDK:
   Steps -
-  - We initialized the Workspace and reload the Experiment, the cluster and the Dataset from the first task (Auto ML run above).
+  - We start with uploading the jupyter notebook we were going to use for this.
+  - In the workbook, we initialized the Workspace using 'ws = Workspace.from_config()', reload the Experiment, the cluster and the Dataset from the first task (Auto ML run above). The process is fairly simple and standard.
+  - We updated the notebook with all the variables to match our environment. Then we downloaded the config.json file from the ml studio and saved it at the same location as the jupyter notebook so our pipeline run can consume it later.
   - We configured automl pipeline and PipelineData for the metrics output and the best model output of the pipeline.
   - We created and sublmitted the pipeline for run.
   - After the run is complete we fetch the metrics of the best model and other child runs.
