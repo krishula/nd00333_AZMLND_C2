@@ -30,6 +30,20 @@ We have performed two different tasks in this project:
  
  # Screenshots of Main Steps
  
+  - Registered Dataset:
  
+  ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/Registered%20Dataset.png)
  
- 
+  - Auto ML Run Compeletion:
+  
+  ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/Run%20Completed.png)
+  
+  - Best Model Details
+  
+  ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/Best%20Auto%20ML%20Model%20Deploy.png)
+  
+  - Best Model Deploy Details
+  
+  ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/Best%20Model%20Deploy%20Details.png)
+  
+  
