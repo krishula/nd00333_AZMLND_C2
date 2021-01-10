@@ -26,9 +26,13 @@ We have performed two different tasks in this project:
  
  ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/Screen%20Shot%202021-01-09%20at%208.56.02%20PM.png)
  
- # TODO - Future Improvements
+ ## Future Improvements
  
- # Screenshots of Main Steps
+ I think we can make this model better with adding deep learning to it. Also, a bigger dataset with more number of rows might help achieve more accuracy.
+ 
+ ## Screenshots of Main Steps
+ 
+ ### Auto ML Run, Best Model and Endpoints
  
   - Registered Dataset:
  
@@ -77,3 +81,35 @@ We have performed two different tasks in this project:
   
   
   ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/Swagger6.png)
+  
+  - Consume Model Endpoints
+  
+  ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/endpoints1.png)
+  
+  
+  ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/endpoints2.png)
+  
+  ### Publish Pipeline with Azure ML SDK
+  
+  - Below is a screenshot after we created the pipeline from the Azure SDK using the "aml-pipelines-with-automated-machine-learning-step.ipynb" notebook:
+  
+  ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/Pipeline%20Creation%20using%20Azure%20ML%20SDK.png)
+  
+  ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/Pipeline%20Endpoints.png)
+  
+  ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/Dataset.png)
+  
+  ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/Published%20Pipeline%20Overview.png)
+  
+  ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/Run%20Details.png)
+  
+  ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/Experiments.png)
+  
+  ## Screencast
+  
+   - A screencast of a working deployed model endpoint, the deployed pipeline, the AutoML model  we have created can be found here:
+  
+  https://youtu.be/FXbGYujZ4Go
+  
+  
+  
