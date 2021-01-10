@@ -24,5 +24,7 @@ We have performed two different tasks in this project:
  
  ## Architectural Diagram
  
- ![alt text](https://
+ ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/Screen%20Shot%202021-01-09%20at%208.56.02%20PM.png)
+ 
+ 
  
