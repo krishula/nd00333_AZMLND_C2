@@ -1,4 +1,4 @@
-# Machine Learning Operation
+# Machine Learning Operations - Project 2 - MLE with Azure ML Nanodegree Program
 
 ### In this project we are operationalizing Machine Learning tasks. Determing best models with an auto ml run and an an auto ml pipeline using python.
 
