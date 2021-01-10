@@ -42,8 +42,18 @@ We have performed two different tasks in this project:
   
   ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/Best%20Auto%20ML%20Model%20Deploy.png)
   
-  - Best Model Deploy Details
+  - Best Model Deploy Details - Applications Insight Enabled
   
   ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/Best%20Model%20Deploy%20Details.png)
   
+  - running logs.py part1
   
+  ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/logs1.png)
+  
+  - running logs.py part2
+  
+  ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/logs2.png)
+  
+  - running logs.py part3
+  
+  ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/logs3.png)
