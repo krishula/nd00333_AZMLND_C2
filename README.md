@@ -57,3 +57,23 @@ We have performed two different tasks in this project:
   - running logs.py part3
   
   ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/logs3.png)
+  
+  - We hit the "Swagger URI" in the deployed model(as seen in the first of the previous 4 images). From there we downloaded the swagger.json and placed it in the "swagger" folder and ran swagger.sh (on port 9000 since we didn't have permission on port 80) and the serve.py (on port 8000).
+  Aftermath of that is in the below few screenshots:
+  
+  ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/swagger1.png)
+  
+  
+  ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/Swagger2.png)
+  
+  
+  ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/Swagger3.png)
+  
+  
+  ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/Swagger4.png)
+  
+  
+  ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/Swagger5.png)
+  
+  
+  ![alt text](https://github.com/krishula/nd00333_AZMLND_C2_Machine_Learning_Operations/blob/master/Screenshots/Swagger6.png)
