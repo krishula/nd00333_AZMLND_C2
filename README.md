@@ -20,7 +20,7 @@ We have performed two different tasks in this project:
 ### 2. Published ML Pipeline using Azure ML SDK:
   Steps -
   - We start with uploading the jupyter notebook we were going to use for this.
-  - In the workbook, we initialized the Workspace using 'ws = Workspace.from_config()', reload the Experiment, the cluster and the Dataset from the first task (Auto ML run above). The process is fairly simple and standard.
+  - In the workbook, we initialized the Workspace using 'ws = Workspace.from_config()', created a new Experiment, a cluster and used the Dataset from the first task (Auto ML run above). The process is fairly simple and standard.
   - We updated the notebook with all the variables to match our environment. Then we downloaded the config.json file from the ml studio and saved it at the same location as the jupyter notebook so our pipeline run can consume it later.
   - We configured automl pipeline and PipelineData for the metrics output and the best model output of the pipeline.
   - We created and sublmitted the pipeline for run.
